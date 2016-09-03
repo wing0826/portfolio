@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Bear.s</title>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="bears.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="bears.js"></script> -->
+	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/* lightbox	*/
+			$("a[rel=web]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+
+
+			$("a[rel=fla]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Flash ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*  fla setup */
+
+						$(".fla01").fancybox({
+				'width'				: '990',
+				'height'			: '580',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla02").fancybox({
+				'width'				: '990',
+				'height'			: '340',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla03").fancybox({
+				'width'				: '990',
+				'height'			: '709',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla04").fancybox({
+				'width'				: '990',
+				'height'			: '750',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla05").fancybox({
+				'width'				: '990',
+				'height'			: '570',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla06").fancybox({
+				'width'				: '990',
+				'height'			: '378',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla07").fancybox({
+				'width'				: '990',
+				'height'			: '375',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla08").fancybox({
+				'width'				: '350',
+				'height'			: '200',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+						$(".fla09").fancybox({
+				'width'				: '350',
+				'height'			: '100',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+									$(".fla10").fancybox({
+				'width'				: '300',
+				'height'			: '100',
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+		$("a[rel=draw]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+		});
+	</script>
+	</head>
+
+	<body>
+    <div class="B_WRAPPER">
+      <div class="B_LEFT">
+        <ul>
+          <li class="LOGO">bear.s</li>
+          <li><a href="#" id="LINK1">關於我</a></li>
+          <li><a href="#web" id="LINK2">網頁作品</a></li>
+          <li><a href="#fla"  id="LINK3">Flash作品</a></li>
+          <li><a href="#draw"  id="LINK4">繪圖作品</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><a href="http://blog.wing0826.com" target="_blank">Blog</a></li>
+          <li><a href="mailto:nwowwf0826@yahoo.com.tw">Mail</a> / <a href="http://www.facebook.com/wing0826" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="B_RIGHT">
+        <div class="B_BAR">bear.s</div>
+        <div class="B_CONTENT LINK">
+          <h2>關於我</h2>
+          <p>李家榮 / wing / bear.s </p>
+          <p>基隆人 / 190CM / 90KG</p>
+          <p>育達商業科技大學資訊管理研究所畢業，大學及研究所時就讀資訊管理，因興趣而進入到設計</p>
+          <p>除了設計相關，對前端及社群等網路相關感興趣</p>
+          <p>&nbsp;</p>
+          <p><a href="http://blog.wing0826.com" target="_blank">blog.wing0826.com</a></p>
+          <p><a href="maitlto:wing0826@gmail.com">wing0826@gmail.com</a></p>
+          <p>0910-830-826</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>技能專長</h3>
+          <p>HTML / CSS  /  SCSS  / JQuery / Java Script</p>
+          <p></p>
+          <p>Sublime Text / Dreamweaver</p>
+          <p>PhotoShop / Sketch / Iillustrator / Flash / Fireworks / Office</p>
+          <p>Windows / Mac OS / iOS / Android</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>工作經驗</h3>
+					<p>2015/05迄今</p>
+          <p>樂購蝦皮<a href="http://shopee.tw" target="_blank">shopee.tw</a>  資深視覺設計師</p>
+					<p>為台灣競舞GARENA子公司，目前最熱門手機拍賣平台</p>
+          <p>工作內容：蝦皮拍賣APP相關活動視覺設計、EDM&BANNER製作、相關輸出物製作、跨國別及部門合作</p>
+          <p>&nbsp;</p>
+          <p>2013/08至2015/04</p>
+          <p>經濟日報暨聯合財經網<a href="http://money.udn.com" target="_blank">money.udn.com</a>  網頁設計兼平台管理師</p>
+					<p>為聯合報系子公司，為國內熱門財經新聞網站</p>
+          <p>工作內容：聯合財經網網站規劃製作，包含網站前期討論、wireframe規劃、後期CSS切版製作等；其它工作包含：報系資訊圖表設計、經濟日報粉絲團經營管理、外部廣告及電子報製作、資訊圖表編製</p>
+          <p>&nbsp;</p>
+          <p>森森百貨<a href="http://www.u-mall.com.tw" target="_blank">www.u-mall.com.tw</a> 視覺設計師</p>
+          <p>2010/06至2013/07</p>
+					<p>為東森集團子公司，國內知名電視購物及網路購物平台</p>
+          <p>工作內容：活動頁面及廣告之設計與製作</p>
+          <p>曾參與網站改版專案、行動版網站專案、公司內部EDM組版系統規劃等，也辦過內部教育訓練與設計及企劃分享</p>
+          <p>&nbsp;</p>
+          <p>基隆女中 資訊人員</p>
+          <p>2009/05至2010/05</p>
+          <p>工作內容：學校活動所需之網站及平面設計</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>個人興趣</h3>
+          <p> 游泳 / 拍照 / 展覽 / 音樂  / 模型 / 電影 / 3C商品</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p></p>
+          <h2><a name="web" id="web"></a>網頁作品 </h2>
+          <p>部份網頁作品集，包含商品活動頁、行銷活動頁面及其它網站整體設計及製作</p>
+          <p>&nbsp;</p>
+          <div class="LIST">
+            <ul>
+              <li> <a href="web/web51.jpg" rel="web"><img src="web/s/web51.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web01.jpg" rel="web"><img src="web/s/web01.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web02.jpg" rel="web"><img src="web/s/web02.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web03.jpg" rel="web"><img src="web/s/web03.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web04.jpg" rel="web"><img src="web/s/web04.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web05.jpg" rel="web"><img src="web/s/web05.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web06.jpg" rel="web"><img src="web/s/web06.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web07.jpg" rel="web"><img src="web/s/web07.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web43.jpg" rel="web"><img src="web/s/web43.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web08.jpg" rel="web"><img src="web/s/web08.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web09.jpg" rel="web"><img src="web/s/web09.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web10.jpg" rel="web"><img src="web/s/web10.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web11.jpg" rel="web"><img src="web/s/web11.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web12.jpg" rel="web"><img src="web/s/web12.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web49.jpg" rel="web"><img src="web/s/web49.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web50.jpg" rel="web"><img src="web/s/web50.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web13.jpg" rel="web"><img src="web/s/web13.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web14.jpg" rel="web"><img src="web/s/web14.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web15.jpg" rel="web"><img src="web/s/web15.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web16.jpg" rel="web"><img src="web/s/web16.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web17.jpg" rel="web"><img src="web/s/web17.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web18.jpg" rel="web"><img src="web/s/web18.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web19.jpg" rel="web"><img src="web/s/web19.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web20.jpg" rel="web"><img src="web/s/web20.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web21.jpg" rel="web"><img src="web/s/web21.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web22.jpg" rel="web"><img src="web/s/web22.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web23.jpg" rel="web"><img src="web/s/web23.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web24.jpg" rel="web"><img src="web/s/web24.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web25.jpg" rel="web"><img src="web/s/web25.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web26.jpg" rel="web"><img src="web/s/web26.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web27.jpg" rel="web"><img src="web/s/web27.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web28.jpg" rel="web"><img src="web/s/web28.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web29.jpg" rel="web"><img src="web/s/web29.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web30.jpg" rel="web"><img src="web/s/web30.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web31.jpg" rel="web"><img src="web/s/web31.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web32.jpg" rel="web"><img src="web/s/web32.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web33.jpg" rel="web"><img src="web/s/web33.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web34.jpg" rel="web"><img src="web/s/web34.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web35.jpg" rel="web"><img src="web/s/web35.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web36.jpg" rel="web"><img src="web/s/web36.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web37.jpg" rel="web"><img src="web/s/web37.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web38.jpg" rel="web"><img src="web/s/web38.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web39.jpg" rel="web"><img src="web/s/web39.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web40.jpg" rel="web"><img src="web/s/web40.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web41.jpg" rel="web"><img src="web/s/web41.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web42.jpg" rel="web"><img src="web/s/web42.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web44.jpg" rel="web"><img src="web/s/web44.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web45.jpg" rel="web"><img src="web/s/web45.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web46.jpg" rel="web"><img src="web/s/web46.jpg" width="150" height="100"  rel="web"></a></li>
+              <li> <a href="web/web47.jpg" rel="web"><img src="web/s/web47.jpg" width="150" height="100"  rel="web"></a></li>
+              <li><a href="web/web48.jpg" rel="web"><img src="web/s/web48.jpg" width="150" height="100"  rel="web"></a></li>
+            </ul>
+          </div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p></p>
+          <h2><a name="fla" id="fla"></a>Flash作品 </h2>
+          <p>部份Flash作品集，包含站內活動頁面所需的Flash及站外Flash廣告</p>
+          <p>&nbsp;</p>
+          <div class="LIST">
+            <ul>
+              <li> <a class="fla01" href="flash/fla01.swf" rel="fla"><img src="flash/s/fla01.jpg" width="150" height="100" rel="fla"><br>
+                電玩展合作活動</a></li>
+              <li> <a  class="fla02" href="flash/fla02.swf" rel="fla"><img src="flash/s/fla02.jpg" width="150" height="100"  rel="fla"><br>
+                行銷活動</a></li>
+              <li> <a  class="fla03" href="flash/fla03.swf" rel="fla"><img src="flash/s/fla03.jpg" width="150" height="100"  rel="fla"><br>
+                機車活動頁</a></li>
+              <li> <a class="fla04"  href="flash/fla04.swf" rel="fla"><img src="flash/s/fla04.jpg" width="150" height="100"  rel="fla"><br>
+                居家活動頁</a></li>
+              <li> <a  class="fla05" href="flash/fla05.swf" rel="fla"><img src="flash/s/fla05.jpg" width="150" height="100"  rel="fla"><br>
+                國片電影合作活動</a></li>
+              <li> <a  class="fla06" href="flash/fla06.swf" rel="fla"><img src="flash/s/fla06.jpg" width="150" height="100"  rel="fla"><br>
+                3C活動頁</a></li>
+              <li> <a  class="fla07" href="flash/fla07.swf" rel="fla"><img src="flash/s/fla07.jpg" width="150" height="100"  rel="fla"><br>
+                3C活動頁</a></li>
+              <li> <a  class="fla08" href="flash/fla08.swf" rel="fla"><img src="flash/s/fla08.jpg" width="150" height="100"  rel="fla"><br>
+                YAHOO首頁外廣</a></li>
+              <li> <a class="fla09"  href="flash/fla09.swf" rel="fla"><img src="flash/s/fla09.jpg" width="150" height="100"  rel="fla"><br>
+                活動外廣</a></li>
+              <li> <a class="fla10"  href="flash/fla10.swf" rel="fla"><img src="flash/s/fla10.jpg" width="150" height="100"  rel="fla"><br>
+                活動外廣</a></li>
+            </ul>
+          </div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p></p>
+          <h2><a name="draw" id="draw"></a>繪圖作品 </h2>
+          <p>部份繪圖作品集，包含活動頁面所需及個人興趣作品</p>
+          <p>&nbsp;</p>
+          <div class="LIST">
+            <ul>
+             <li> <a href="draw/draw02.jpg" rel="draw"><img src="draw/s/draw02.jpg" width="150" height="100"  rel="draw"></a></li>
+
+              <li> <a href="draw/draw03.gif" rel="draw"><img src="draw/s/draw03.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw01.gif" rel="draw"><img src="draw/s/draw01.jpg" width="150" height="100" rel="draw"></a></li>
+
+              <li> <a href="draw/draw04.jpg" rel="draw"><img src="draw/s/draw04.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw05.jpg" rel="draw"><img src="draw/s/draw05.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw06.jpg" rel="draw"><img src="draw/s/draw06.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw07.jpg" rel="draw"><img src="draw/s/draw07.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw08.jpg" rel="draw"><img src="draw/s/draw08.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw09.jpg" rel="draw"><img src="draw/s/draw09.jpg" width="150" height="100"  rel="draw"></a></li>
+              <li> <a href="draw/draw10.jpg" rel="draw"><img src="draw/s/draw10.jpg" width="150" height="100"  rel="draw"></a></li>
+							<li> <a href="draw/draw11.jpg" rel="draw"><img src="draw/s/draw11.jpg" width="150" height="100"  rel="draw"></a></li>
+            </ul>
+          </div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
