@@ -1,363 +1,266 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Bear.s</title>
-	<link href="reset.css" rel="stylesheet" type="text/css">
-	<link href="bears.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<!-- <script type="text/javascript" src="bears.js"></script> -->
-	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen">
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/* lightbox	*/
-			$("a[rel=web]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="bear.s">
 
-			$("a[rel=fla]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Flash ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+    <title>bear.s</title>
 
-			/*  fla setup */
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-						$(".fla01").fancybox({
-				'width'				: '990',
-				'height'			: '580',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla02").fancybox({
-				'width'				: '990',
-				'height'			: '340',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla03").fancybox({
-				'width'				: '990',
-				'height'			: '709',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla04").fancybox({
-				'width'				: '990',
-				'height'			: '750',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla05").fancybox({
-				'width'				: '990',
-				'height'			: '570',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla06").fancybox({
-				'width'				: '990',
-				'height'			: '378',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla07").fancybox({
-				'width'				: '990',
-				'height'			: '375',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla08").fancybox({
-				'width'				: '350',
-				'height'			: '200',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-						$(".fla09").fancybox({
-				'width'				: '350',
-				'height'			: '100',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-									$(".fla10").fancybox({
-				'width'				: '300',
-				'height'			: '100',
-				'padding'			: 0,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-		$("a[rel=draw]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
-		});
-	</script>
-	</head>
+</head>
 
-	<body>
-    <div class="B_WRAPPER">
-      <div class="B_LEFT">
-        <ul>
-          <li class="LOGO">bear.s</li>
-          <li><a href="#" id="LINK1">關於我</a></li>
-          <li><a href="#web" id="LINK2">網頁作品</a></li>
-          <li><a href="#fla"  id="LINK3">Flash作品</a></li>
-          <li><a href="#draw"  id="LINK4">繪圖作品</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li><a href="http://blog.wing0826.com" target="_blank">Blog</a></li>
-          <li><a href="mailto:nwowwf0826@yahoo.com.tw">Mail</a> / <a href="http://www.facebook.com/wing0826" target="_blank">Facebook</a></li>
-        </ul>
-      </div>
-      <div class="B_RIGHT">
-        <div class="B_BAR">bear.s</div>
-        <div class="B_CONTENT LINK">
-          <h2>關於我</h2>
-          <p>李家榮 / wing / bear.s </p>
-          <p>基隆人</p>
-          <p>育達商業科技大學資訊管理研究所畢業，大學及研究所時就讀資訊管理，因興趣而進入到設計</p>
-          <p>除了設計相關，對社群及前端等網路相關事物有強烈興趣</p>
-          <p>&nbsp;</p>
-          <p><a href="http://blog.wing0826.com" target="_blank">blog.wing0826.com</a></p>
-          <p><a href="maitlto:wing0826@gmail.com">wing0826@gmail.com</a></p>
-          <p>0910-830-826</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <h3>技能專長</h3>
-          <p>HTML / CSS  /  SCSS  / JQuery / Java Script</p>
-          <p>Sublime Text / Dreamweaver</p>
-          <p>PhotoShop / Sketch / Iillustrator / Flash / Fireworks / Office</p>
-          <p>Windows / Mac OS / iOS / Android</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <h3>工作經驗</h3>
-					<p>2015/05迄今</p>
-          <p>蝦皮拍賣 <a href="http://shopee.tw" target="_blank">shopee.tw</a>  資深視覺設計師</p>
-					<p>為台灣競舞GARENA子公司，目前最熱門手機拍賣平台</p>
-          <p>工作內容：</p>
-          <p>蝦皮拍賣相關活動頁面視覺設計、EDM&BANNER製作、線上線下相關輸出物製作、跨國別及部門合作</p>
-          <p>在部門內分享與嘗試當前新鮮技術</p>
-          <p>&nbsp;</p>
-          <p>2013/08至2015/04</p>
-          <p>經濟日報暨聯合財經網<a href="http://money.udn.com" target="_blank">money.udn.com</a>  網頁設計兼平台管理師</p>
-					<p>聯合報系子公司，目前為國內熱門財經新聞網站之一</p>
-          <p>工作內容：</p>
-          <p>負責聯合財經網初期建置，包含網站規劃製作、前期討論、wireframe規劃、後期CSS切版製作等，並與技術部們協同合作；其它工作包含：報系資訊圖表設計、經濟日報粉絲團經營管理、外部廣告及電子報製作、資訊圖表編製</p>
-          <p>&nbsp;</p>
-          <p>森森百貨<a href="http://www.u-mall.com.tw" target="_blank">www.u-mall.com.tw</a> 視覺設計師</p>
-          <p>2010/06至2013/07</p>
-					<p>東森集團子公司，國內知名電視購物及網路購物平台</p>
-          <p>工作內容：</p>
-          <p>活動頁面及廣告之設計與製作</p>
-          <p>曾參與網站改版專案、行動版網站專案、公司內部EDM組版系統規劃等，也辦過內部教育訓練與設計及企劃分享</p>
-          <p>&nbsp;</p>
-          <p>基隆女中 資訊人員</p>
-          <p>2009/05至2010/05</p>
-          <p>工作內容：</p>
-          <p>負責學校活動所需之網站及平面設計</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <h3>個人興趣</h3>
-          <p> 游泳 / 拍照 / 展覽 / 音樂  / 模型 / 電影 / 3C商品</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p></p>
-          <h2><a name="web" id="web"></a>網頁作品 </h2>
-          <p>部份網頁作品集，包含商品活動頁、行銷活動頁面及其它網站整體設計及製作</p>
-          <p>&nbsp;</p>
-          <div class="LIST">
-            <ul>
-              <li> <a href="web/web51.jpg" rel="web"><img src="web/s/web51.jpg" width="800" height="240"  rel="web"></a></li>
-							<li> <a href="web/web62.jpg" rel="web"><img src="web/s/web62.jpg" width="150" height="100"  rel="web"></a></li>
-							<li> <a href="web/web52.jpg" rel="web"><img src="web/s/web52.jpg" width="150" height="100"  rel="web"></a></li>
-							<li> <a href="web/web59.jpg" rel="web"><img src="web/s/web59.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web61.jpg" rel="web"><img src="web/s/web61.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web53.jpg" rel="web"><img src="web/s/web53.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web54.jpg" rel="web"><img src="web/s/web54.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web55.jpg" rel="web"><img src="web/s/web55.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web56.jpg" rel="web"><img src="web/s/web56.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web57.jpg" rel="web"><img src="web/s/web57.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web58.jpg" rel="web"><img src="web/s/web58.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web01.jpg" rel="web"><img src="web/s/web01.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web02.jpg" rel="web"><img src="web/s/web02.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web03.jpg" rel="web"><img src="web/s/web03.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web04.jpg" rel="web"><img src="web/s/web04.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web05.jpg" rel="web"><img src="web/s/web05.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web06.jpg" rel="web"><img src="web/s/web06.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web07.jpg" rel="web"><img src="web/s/web07.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web43.jpg" rel="web"><img src="web/s/web43.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web08.jpg" rel="web"><img src="web/s/web08.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web09.jpg" rel="web"><img src="web/s/web09.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web10.jpg" rel="web"><img src="web/s/web10.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web11.jpg" rel="web"><img src="web/s/web11.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web12.jpg" rel="web"><img src="web/s/web12.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web49.jpg" rel="web"><img src="web/s/web49.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web14.jpg" rel="web"><img src="web/s/web14.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web17.jpg" rel="web"><img src="web/s/web17.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web21.jpg" rel="web"><img src="web/s/web21.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web22.jpg" rel="web"><img src="web/s/web22.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web23.jpg" rel="web"><img src="web/s/web23.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web25.jpg" rel="web"><img src="web/s/web25.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web28.jpg" rel="web"><img src="web/s/web28.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web31.jpg" rel="web"><img src="web/s/web31.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web33.jpg" rel="web"><img src="web/s/web33.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web34.jpg" rel="web"><img src="web/s/web34.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web35.jpg" rel="web"><img src="web/s/web35.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web37.jpg" rel="web"><img src="web/s/web37.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web39.jpg" rel="web"><img src="web/s/web39.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web40.jpg" rel="web"><img src="web/s/web40.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web41.jpg" rel="web"><img src="web/s/web41.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web42.jpg" rel="web"><img src="web/s/web42.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web44.jpg" rel="web"><img src="web/s/web44.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web45.jpg" rel="web"><img src="web/s/web45.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web46.jpg" rel="web"><img src="web/s/web46.jpg" width="150" height="100"  rel="web"></a></li>
-              <li> <a href="web/web47.jpg" rel="web"><img src="web/s/web47.jpg" width="150" height="100"  rel="web"></a></li>
-              <li><a href="web/web48.jpg" rel="web"><img src="web/s/web48.jpg" width="150" height="100"  rel="web"></a></li>
-            </ul>
-          </div>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p></p>
-          <h2><a name="fla" id="fla"></a>Flash作品 </h2>
-          <p>部份Flash作品集，包含站內活動頁面所需的Flash及站外Flash廣告</p>
-          <p>&nbsp;</p>
-          <div class="LIST">
-            <ul>
-              <li> <a class="fla01" href="flash/fla01.swf" rel="fla"><img src="flash/s/fla01.jpg" width="150" height="100" rel="fla"><br>
-                電玩展合作活動</a></li>
-              <li> <a  class="fla02" href="flash/fla02.swf" rel="fla"><img src="flash/s/fla02.jpg" width="150" height="100"  rel="fla"><br>
-                行銷活動</a></li>
-              <li> <a  class="fla03" href="flash/fla03.swf" rel="fla"><img src="flash/s/fla03.jpg" width="150" height="100"  rel="fla"><br>
-                機車活動頁</a></li>
-              <li> <a class="fla04"  href="flash/fla04.swf" rel="fla"><img src="flash/s/fla04.jpg" width="150" height="100"  rel="fla"><br>
-                居家活動頁</a></li>
-              <li> <a  class="fla05" href="flash/fla05.swf" rel="fla"><img src="flash/s/fla05.jpg" width="150" height="100"  rel="fla"><br>
-                國片電影合作活動</a></li>
-              <li> <a  class="fla06" href="flash/fla06.swf" rel="fla"><img src="flash/s/fla06.jpg" width="150" height="100"  rel="fla"><br>
-                3C活動頁</a></li>
-              <li> <a  class="fla07" href="flash/fla07.swf" rel="fla"><img src="flash/s/fla07.jpg" width="150" height="100"  rel="fla"><br>
-                3C活動頁</a></li>
-              <li> <a  class="fla08" href="flash/fla08.swf" rel="fla"><img src="flash/s/fla08.jpg" width="150" height="100"  rel="fla"><br>
-                YAHOO首頁外廣</a></li>
-              <li> <a class="fla09"  href="flash/fla09.swf" rel="fla"><img src="flash/s/fla09.jpg" width="150" height="100"  rel="fla"><br>
-                活動外廣</a></li>
-              <li> <a class="fla10"  href="flash/fla10.swf" rel="fla"><img src="flash/s/fla10.jpg" width="150" height="100"  rel="fla"><br>
-                活動外廣</a></li>
-            </ul>
-          </div>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p></p>
-          <h2><a name="draw" id="draw"></a>繪圖作品 </h2>
-          <p>部份繪圖作品集，包含活動頁面所需及個人興趣作品</p>
-          <p>&nbsp;</p>
-          <div class="LIST">
-            <ul>
-             <li> <a href="draw/draw02.jpg" rel="draw"><img src="draw/s/draw02.jpg" width="150" height="100"  rel="draw"></a></li>
+<body id="page-top">
 
-              <li> <a href="draw/draw03.gif" rel="draw"><img src="draw/s/draw03.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw01.gif" rel="draw"><img src="draw/s/draw01.jpg" width="150" height="100" rel="draw"></a></li>
-
-              <li> <a href="draw/draw04.jpg" rel="draw"><img src="draw/s/draw04.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw05.jpg" rel="draw"><img src="draw/s/draw05.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw06.jpg" rel="draw"><img src="draw/s/draw06.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw07.jpg" rel="draw"><img src="draw/s/draw07.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw08.jpg" rel="draw"><img src="draw/s/draw08.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw09.jpg" rel="draw"><img src="draw/s/draw09.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw10.jpg" rel="draw"><img src="draw/s/draw10.jpg" width="150" height="100"  rel="draw"></a></li>
-							<li> <a href="draw/draw11.jpg" rel="draw"><img src="draw/s/draw11.jpg" width="150" height="100"  rel="draw"></a></li>
-              <li> <a href="draw/draw12.jpg" rel="draw"><img src="draw/s/draw12.jpg" width="150" height="100"  rel="draw"></a></li>
-            </ul>
-          </div>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p></p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p></p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">bear.s</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+       
+        <i class="fas fa-bars"></i>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">I am bear.s</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">UI / UX / Web / Graphic Designer</h2>
+                <a href="#about" class="btn btn-primary js-scroll-trigger">Hey!</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">About</h2>
+                    <h3 class="d-inline-block">Me</h3>
+                    <p class="text-white-50">wing / bear.s<br></p>
+
+                    <h3 class="d-inline-block">Work Experience</h3>
+                    <p class="text-white-50">IQ-T, Graphic Design Supervisor<br> Shopee Taiwan of SEA Group, Senior Graphic Designer<br> Economic Daily News of UDN Group, Graphic Designer<br> u-mall of EHS Group, Graphic Designer</p>
+
+                    <h3 class="d-inline-block">Abilities</h3>
+                    <p class="text-white-50">Sketch / Photoshop / illustrator / CSS / HTML / SASS / Flash</p>
+
+
+                    <h3 class="d-inline-block">Interests</h3>
+                    <p class="text-white-50">Snap / Social Media / Swimming / Block</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-12"> <img src="img/photo.jpg" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="img/edn.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Economic Daily News</h4>
+                        <p class="text-black-50 mb-0">RWD website for the financial news<br>
+                            <a href="#" style="text-right">more</a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="img/iboai.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>ibo.ai</h4>
+                        <p class="text-black-50 mb-0">Build a AI/NLKE brand </a> <br><a href="#">more</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <a href="gallery/ui.html"> <img class="img-fluid" src="img/gr.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">UI / UX Design</h4>
+                                <!-- <p class="mb-0 text-white-50">works</p> -->
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <a href="gallery/gr.html"> <img class="img-fluid" src="img/gr.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Graphic Design</h4>
+                                <!-- <p class="mb-0 text-white-50">works</p> -->
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-black">
+        <div class="container">
+
+            <div class="row">
+                <h2 class="col-12 text-white text-center mb-4">Contact</h2>
+
+
+
+
+
+                <div class="col-12  col-md-6 col-lg-3 mb-3 ">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">+886-910-830-826</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-lg-3 mb-3 ">
+                    <div class="card py-4 h-100 ">
+                        <div class="card-body text-center ">
+                            <i class="fas fa-envelope text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0 ">Email</h4>
+                            <hr class="my-4 ">
+                            <div class="small text-black-50 ">
+                                <a href="mailto:wing0826@gmail.com" target="_blank">wing0826@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12  col-md-6 col-lg-3 mb-3 ">
+                    <div class="card py-4 h-100 ">
+                        <div class="card-body text-center ">
+
+                            <i class="fab fa-facebook-messenger text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0 ">FB Messenger</h4>
+                            <hr class="my-4 ">
+                            <div class="small text-black-50 ">
+
+                                <a href="http://m.me/wing0826" target="_blank">m.me/wing0826</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12  col-md-6 col-lg-3 mb-3 ">
+                    <div class="card py-4 h-100 ">
+                        <div class="card-body text-center ">
+                            <i class="fab fa-linkedin text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0 ">Linkedin</h4>
+                            <hr class="my-4 ">
+                            <div class="small text-black-50 ">
+
+                                <a href="https://www.linkedin.com/in/wing0826/" target="_blank">wing0826</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50 ">
+        <div class="container ">
+            Copyright &copy; bear.s 2019
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js "></script>
+
 </body>
+
 </html>
