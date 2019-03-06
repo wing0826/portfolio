@@ -7,7 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="bear.s">
-
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1008203566031528&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <title>bear.s</title>
 
     <!-- Bootstrap core CSS -->
@@ -92,8 +102,8 @@
     <section id="projects" class="projects-section bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Projects</h2>
-            <!-- Featured Project Row -->
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+
+            <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-lg-5">
                     <img class="img-fluid" src="img/edn.jpg" alt="">
                 </div>
@@ -110,7 +120,7 @@
             </div>
 
 
-            <!-- Featured Project Row -->
+          
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-lg-5">
                     <img class="img-fluid" src="img/iboai.jpg" alt="">
@@ -122,23 +132,21 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
 
 
 
-
-            <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
-                    <a href="gallery/ui.html"> <img class="img-fluid" src="img/gr.jpg" alt=""></a>
+                    <a href="gallery/ui.html"> <img class="img-fluid" src="img/ui.jpg" alt=""></a>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4><a href="gallery/ui.html" class="text-white"> UI / UX Design</a></h4>
-                                <p class="mb-0 text-white-50">web, app, dashboard...etc</p>
+                                <p class="mb-0 text-white-50">ui/ux, web, app, dashboard...etc</p>
                                 <hr class="d-none d-lg-block mb-0 ml-0">
                             </div>
                         </div>
@@ -167,6 +175,11 @@
 
         </div>
     </section>
+
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact " class="contact-section bg-black ">
