@@ -9,11 +9,15 @@
 }
 
 .btn-primary {
+    background-color: $bg-primary;
     // background-color: $primary;
-    background-color: #e93177;
-    &:hover {
-        background-color: darken($primary, 10%);
+    &:hover,
+    &:active {
+        background-color: lighten($bg-primary, 10%);
     }
+    //   &:hover {
+    //     background-color: darken($primary, 10%);
+    // }
     // &:focus {
     //     background-color: darken($primary, 10%);
     //     color: white;
@@ -21,4 +25,8 @@
     // &:active {
     //     background-color: darken($primary, 15%) !important;
     // }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: $bg-primary;
 }

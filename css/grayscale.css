@@ -1,1 +1,316 @@
-#mainNav{min-height:56px;background-color:#fff}#mainNav .navbar-toggler{font-size:80%;padding:0.75rem;color:#528f9d;border:1px solid #528f9d}#mainNav .navbar-toggler:focus{outline:none}#mainNav .navbar-brand{color:#2b3d42;font-weight:700;padding:.9rem 0}#mainNav .navbar-nav .nav-item:hover{color:fade(#fff, 80%);outline:none;background-color:transparent}#mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{outline:none;background-color:transparent}@media (min-width: 992px){#mainNav{padding-top:0;padding-bottom:0;border-bottom:none;background-color:transparent;transition:background-color 0.3s ease-in-out}#mainNav .navbar-brand{padding:.5rem 0;color:rgba(255,255,255,0.5)}#mainNav .nav-link{transition:none;padding:2rem 1.5rem;color:rgba(255,255,255,0.5)}#mainNav .nav-link:hover{color:rgba(255,255,255,0.75)}#mainNav .nav-link:active{color:white}#mainNav.navbar-shrink{background-color:#fff}#mainNav.navbar-shrink .navbar-brand{color:#2b3d42}#mainNav.navbar-shrink .nav-link{color:#2b3d42;padding:1.5rem 1.5rem 1.25rem;border-bottom:0.25rem solid transparent}#mainNav.navbar-shrink .nav-link:hover{color:#528f9d}#mainNav.navbar-shrink .nav-link:active{color:#38616b}#mainNav.navbar-shrink .nav-link.active{color:#528f9d;outline:none;border-bottom:0.25rem solid #528f9d}}.masthead{position:relative;width:100%;height:auto;min-height:35rem;padding:15rem 0;background:linear-gradient(to bottom, rgba(43,61,66,0.1) 0%, rgba(43,61,66,0.5) 75%, #2b3d42 100%),url("../img/bg.jpg");background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.masthead h1{font-family:'Varela Round';font-size:2.5rem;line-height:2.5rem;letter-spacing:0.8rem;background:-webkit-linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0));-webkit-text-fill-color:transparent;-webkit-background-clip:text}.masthead h2{max-width:40rem;font-size:1rem}@media (min-width: 768px){.masthead h1{font-size:4rem;line-height:4rem}}@media (min-width: 992px){.masthead{height:100vh;padding:0}.masthead h1{font-size:6.5rem;line-height:6.5rem;letter-spacing:0.8rem}.masthead h2{max-width:30rem;font-size:1.25rem}}.btn{box-shadow:0 0.1875rem 0.1875rem 0 rgba(0,0,0,0.1) !important;padding:1.25rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0}.btn-primary{background-color:#e93177}.btn-primary:hover{background-color:#41707b}.about-section{padding-top:10rem;background:linear-gradient(to bottom, #2b3d42 0%, rgba(43,61,66,0.9) 75%, rgba(43,61,66,0.8) 100%)}.about-section h3{font-size:0.6rem;line-height:1.6rem;background-color:#fff;width:200px}.about-section p{font-size:1rem;line-height:2.5rem;margin-bottom:4rem}.projects-section{padding:10rem 0}.projects-section .featured-text{padding:2rem}@media (min-width: 992px){.projects-section .featured-text{padding:0 0 0 2rem;border-left:0.5rem solid #528f9d}}.projects-section .project-text{padding:3rem;font-size:90%}@media (min-width: 992px){.projects-section .project-text{padding:5rem}.projects-section .project-text hr{border-color:#528f9d;border-width:.25rem;width:30%}}.signup-section{padding:10rem 0;background:linear-gradient(to bottom, rgba(43,61,66,0.1) 0%, rgba(43,61,66,0.5) 75%, #2b3d42 100%),url("../img/bg-signup.jpg");background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}.signup-section .form-inline input{box-shadow:0 0.1875rem 0.1875rem 0 rgba(0,0,0,0.1) !important;padding:1.25rem 2rem;height:auto;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:0.15rem;border:0}.contact-section{padding:5rem 0 0}.contact-section .card{border:0;border-bottom:0.25rem solid #528f9d}.contact-section .card h4{font-size:0.8rem;font-family:'Varela Round';text-transform:uppercase;letter-spacing:0.15rem}.contact-section .card hr{border-color:#528f9d;border-width:0.25rem;width:3rem}.contact-section .social{margin-top:5rem}.contact-section .social a{text-align:center;height:3rem;width:3rem;background:rgba(255,255,255,0.1);border-radius:100%;line-height:3rem;color:rgba(255,255,255,0.3)}.contact-section .social a:hover{color:rgba(255,255,255,0.5)}.contact-section .social a:active{color:#fff}.intro h1{display:block;margin:5rem auto 2rem auto;font-size:2rem;line-height:2rem}.intro h2{display:block;font-size:1rem;margin:1rem auto 5rem auto}body{font-family:'Nunito';letter-spacing:0.2rem}a{color:#528f9d}a:focus,a:hover{text-decoration:none;color:#2f525a}.bg-black{background-color:#2b3d42 !important}.bg-primary{background-color:#fff000}.text-primary{color:#528f9d !important}footer{padding:5rem 0}
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #96db27;
+  border: 1px solid #96db27;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #424763;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #424763;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #424763;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #96db27;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #6a9c1a;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #96db27;
+    outline: none;
+    border-bottom: 0.25rem solid #96db27;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(66, 71, 99, 0.1) 0%, rgba(66, 71, 99, 0.5) 75%, #424763 100%), url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 40rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #96db27;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #abe253;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #96db27;
+}
+
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #424763 0%, #2e3144);
+}
+
+.about-section h3 {
+  font-size: 0.6rem;
+  line-height: 1.6rem;
+  background-color: #fff;
+  width: 200px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #96db27;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #96db27;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(66, 71, 99, 0.1) 0%, rgba(66, 71, 99, 0.5) 75%, #424763 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #96db27;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #96db27;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+.intro h1 {
+  display: block;
+  margin: 5rem auto 2rem auto;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.intro h2 {
+  display: block;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 1.8rem auto;
+}
+
+.intro h3 {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin: 1rem auto;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  color: #96db27;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #5b8616;
+}
+
+.bg-black {
+  background-color: #424763 !important;
+}
+
+.bg-primary {
+  background-color: #fff000;
+}
+
+.text-primary {
+  color: #96db27 !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
