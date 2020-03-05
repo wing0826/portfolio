@@ -314,3 +314,12 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+.styleguide {
+  text-align: center;
+}
+
+.styleguide img {
+  width: auto;
+  max-width: 100%;
+}
