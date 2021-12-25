@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'signup.scss';
+@import 'contact.scss';
+@import 'intro.scss';
+body {
+    // font-family: 'Nunito';
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+a {
+    color: $primary;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        color: darken($primary, 20%);
+    }
+}
+
+.bg-black {
+    background-color: $black !important;
+}
+
+.bg-primary {
+    // background-color: $primary !important;
+    background-color: #fff000;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+footer {
+    padding: 5rem 0;
+}
+
+.styleguide {
+    text-align: center;
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+}
